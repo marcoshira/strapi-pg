@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_section_section_carrousels",
+  "info": {
+    "displayName": "section-carrousel",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "carrousel_item": {
+      "displayName": "carrousel",
+      "type": "component",
+      "repeatable": true,
+      "component": "section.carrousel"
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section-metadata",
+      "required": true
+    }
+  }
+}

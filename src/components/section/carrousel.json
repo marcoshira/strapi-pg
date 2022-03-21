@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_section_carrousels",
+  "info": {
+    "displayName": "carrousel",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "image_description": {
+      "type": "text"
+    }
+  }
+}
