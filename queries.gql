@@ -1,0 +1,146 @@
+# Write your query or mutation here
+fragment image on UploadFile {
+  url
+  alternativeText
+}
+
+fragment menuLink on ComponentMenuBlogMenuLink {
+  link
+  text
+  newTab
+  id
+}
+
+fragment category on Category {
+  displayName
+  slug
+}
+
+fragment tag on Tag {
+  displayName
+  slug
+}
+
+fragment author on Author {
+  displayName
+  slug
+}
+
+fragment settings on Setting {
+  blogName
+  blogDescription
+  logo {
+    data {
+      id
+      attributes {
+        ...image
+      }
+    }
+  }
+  menuLink {
+    ...menuLink
+  }
+  html
+}
+
+fragment posts on Post {
+  title
+  slug
+  excerpt
+  allowComments
+  createdAt
+  updatedAt
+  tags {
+    data {
+      id
+      attributes {
+        ...tag
+      }
+    }
+  }
+  categories {
+    data {
+      id
+      attributes {
+        ...category
+      }
+    }
+  }
+  author {
+    data {
+      id
+      attributes {
+        ...author
+      }
+    }
+  }
+  cover {
+    data {
+      id
+      attributes {
+        ...image
+      }
+    }
+  }
+}
+
+query GET_SETTINGS {
+  setting {
+    data {
+      attributes {
+        ...settings
+      }
+    }
+  }
+}
+
+query GET_POSTS {
+  posts {
+    data {
+      id
+      attributes {
+        ...posts
+      }
+    }
+  }
+}
+
+query GET_POST_BY_SLUG($slug: String!) {
+  posts(filters: { slug: { eq: $slug } }) {
+    data {
+      attributes {
+        ...posts
+      }
+    }
+  }
+}
+
+query GET_POST_BY_AUTHOR($slugAuthor: String!) {
+  posts(filters: { author: { slug: { eq: $slugAuthor } } }) {
+    data {
+      attributes {
+        ...posts
+      }
+    }
+  }
+}
+
+query GET_POST_BY_TAG($slugTag: String!) {
+  posts(filters: { tags: { slug: { eq: $slugTag } } }) {
+    data {
+      attributes {
+        ...posts
+      }
+    }
+  }
+}
+
+query GET_POST_BY_CATEGORY($slugCategory: String!) {
+  posts(filters: { categories: { slug: { eq: $slugCategory } } }) {
+    data {
+      attributes {
+        ...posts
+      }
+    }
+  }
+}
