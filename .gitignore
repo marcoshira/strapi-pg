@@ -114,4 +114,4 @@ exports
 *.cache
 build
 .strapi-updater.json
-!ckeditor5-custom
+!ckeditor5-custom/build
