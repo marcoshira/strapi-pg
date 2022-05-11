@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "mmhs",
+  "info": {
+    "singularName": "mmh",
+    "pluralName": "mmhs",
+    "displayName": "mmh",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "About": {
+      "displayName": "About_mmh",
+      "type": "component",
+      "repeatable": false,
+      "component": "section-mmh.about-mmh"
+    },
+    "Skills": {
+      "displayName": "Skills_mmh",
+      "type": "component",
+      "repeatable": false,
+      "component": "section-mmh.skills-mmh"
+    },
+    "Projects": {
+      "displayName": "Projects_mmh",
+      "type": "component",
+      "repeatable": false,
+      "component": "section-mmh.projects-mmh"
+    },
+    "Footer": {
+      "displayName": "Footer",
+      "type": "component",
+      "repeatable": false,
+      "component": "section-mmh.footer",
+      "required": true
+    },
+    "Menu": {
+      "displayName": "Menu_mmh",
+      "type": "component",
+      "repeatable": false,
+      "component": "menu-mmh.menu-mmh",
+      "required": true
+    },
+    "Cursos": {
+      "displayName": "Cursos_mmh",
+      "type": "component",
+      "repeatable": false,
+      "component": "section-mmh.cursos-mmh"
+    }
+  }
+}

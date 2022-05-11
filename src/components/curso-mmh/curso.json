@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_curso_mmh_cursos",
+  "info": {
+    "displayName": "Curso",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Certificado_url": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

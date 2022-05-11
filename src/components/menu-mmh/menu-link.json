@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_menu_mmh_menu_links",
+  "info": {
+    "displayName": "MenuLink",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "required": true
+    },
+    "Url": {
+      "type": "string",
+      "required": true
+    },
+    "NewTab": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}

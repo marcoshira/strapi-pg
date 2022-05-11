@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_section_mmh_projects_mmhs",
+  "info": {
+    "displayName": "Projects_mmh",
+    "icon": "angle-double-left"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Project": {
+      "displayName": "Project",
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-mmh.project",
+      "required": true
+    }
+  }
+}

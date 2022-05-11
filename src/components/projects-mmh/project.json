@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_projects_mmh_projects",
+  "info": {
+    "displayName": "Project",
+    "icon": "angle-left"
+  },
+  "options": {},
+  "attributes": {
+    "Project_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Project_title": {
+      "type": "string",
+      "required": true
+    },
+    "Project_description": {
+      "type": "string",
+      "required": true
+    },
+    "Project_link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

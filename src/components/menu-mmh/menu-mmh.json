@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_menu_mmh_menu_mmhs",
+  "info": {
+    "displayName": "Menu_mmh",
+    "icon": "angle-double-right"
+  },
+  "options": {},
+  "attributes": {
+    "Menu_text": {
+      "type": "string"
+    },
+    "Menu_logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Menu_link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu-mmh.menu-link",
+      "required": false
+    }
+  }
+}

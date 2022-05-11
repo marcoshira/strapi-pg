@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_section_mmh_skills_mmhs",
+  "info": {
+    "displayName": "Skills_mmh",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Skill": {
+      "displayName": "Skill",
+      "type": "component",
+      "repeatable": true,
+      "component": "skills-mmh.skill"
+    }
+  }
+}

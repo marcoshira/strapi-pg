@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_section_mmh_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "Footer_text": {
+      "type": "string",
+      "required": true
+    },
+    "Footer_link": {
+      "displayName": "Footer_link",
+      "type": "component",
+      "repeatable": true,
+      "component": "footer-mmh.footer-link"
+    }
+  }
+}

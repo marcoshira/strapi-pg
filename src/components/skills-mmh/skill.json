@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_skills_mmh_skills",
+  "info": {
+    "displayName": "Skill",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "Skill_logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Skill_name": {
+      "type": "string",
+      "required": true
+    },
+    "Skill_description": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_section_mmh_about_mmhs",
+  "info": {
+    "displayName": "About_mmh",
+    "icon": "basketball-ball",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Content": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

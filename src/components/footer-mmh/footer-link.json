@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_footer_mmh_footer_links",
+  "info": {
+    "displayName": "Footer_link",
+    "icon": "angle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Link_profile": {
+      "type": "string",
+      "required": false
+    },
+    "Link_url": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
